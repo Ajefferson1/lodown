@@ -52,7 +52,7 @@ module.exports.first = first;
 /**
  * last: Gets the last number of elements in an array .
  * @param {Array} array
- * @return {Array}num: Returns the last number of elemets in an array.
+ * @return {Array}num: Returns the last number of elements in an array.
  */
 function last(collection, value){
     if(!Array.isArray(collection) || value < 0){
@@ -108,7 +108,7 @@ module.exports.contains = contains;
  * @param {Array or Object} collection: The collection over which to iterate.
  * @param {Function} action: The Function to be applied to each value in the 
  * collection
- * @return {Array or Object} collection
+ * @return: Does not return anything.
  */
  function each(collection, test){
  if(Array.isArray(collection)){
@@ -143,7 +143,7 @@ function unique(array) {
 module.exports.unique = unique;
 
 /**
- * filter: Designed to look through each value in a list.
+ * filter: Designed to save all of the elements that pass the test function in a new array.
  * @param {Array or Object} array: The collection to iterate (filter) over.
  * @param {Function} test: invoked per iteration and returns a boolean.
  * @return {Array}: returns new filtered array of all elements that pass the test
